@@ -12,44 +12,46 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
-                <h1><i class="far fa-newspaper fa-2x"></i> New York Times Search</h1>
+                <h1><i class="fas fa-newspaper"></i> New York Times Search</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
+
+    <div class="card">
+        <div class="card-header">
+            Search Parameters
+        </div>
+        <div class="card-body">
                 <!-- form -->
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="searchTerm" placeholder="Search Term:">
-                    </div>
-                    <select class="custom-select">
-                        <option selected>Number of Records to Retrieve:</option>
-                        <option value="1">1</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                    </select>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="startYear" placeholder="Start Year (Optional):">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="endYear" placeholder="End Year (Optional):">
-                    </div>
-                    <button type="button" class="btn btn-primary">Search</button>
-                    <button type="button" class="btn btn-primary">Clear Results</button>
-                </form>
-            </div>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="searchTerm" placeholder="Search Term:">
+                </div>
+                <select class="custom-select mb-3">
+                    <option selected>Number of Records to Retrieve:</option>
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="startYear" placeholder="Start Year (Optional):">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="endYear" placeholder="End Year (Optional):">
+                </div>
+                <button type="button" class="btn btn-primary">Search</button>
+                <button type="button" class="btn btn-primary">Clear Results</button>
+            </form>
         </div>
-        <div class="row">
-            <div class="col">
-                <!-- results -->
-                <span id="results"></span>
-            </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Top Articles
         </div>
-        <div class="row">
-            <div class="col">
-                <!-- footer -->
-            </div>
+        <div class="card-body">
+            <span id="results"></span>
         </div>
+    </div>
+    <div class="footer">
+        Made With Lots and Lots of Love
     </div>
 </body>
